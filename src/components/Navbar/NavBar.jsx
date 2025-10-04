@@ -11,7 +11,9 @@ const NavBar = () => {
 
     return (
         <nav>
-            
+            {
+                routes.map(route =><li key={route.id}><a href={route.path}></a></li>)
+            }
         </nav>
     );
 };
