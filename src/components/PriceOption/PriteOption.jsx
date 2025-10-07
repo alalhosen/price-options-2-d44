@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
-
-const PriteOption = ({option}) => {
+i
+const PriceOption = ({option}) => {
     return (
         <div>
           
@@ -10,8 +10,8 @@ const PriteOption = ({option}) => {
     );
 };
 
-PriceOption.propTypes={
-    option:PropTypes.object
-}
+// PriceOption.propTypes={
+//     option:PropTypes.object
+// }
 
 export default PriteOption;
