@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
+import { FaCheckCircle } from "react-icons/fa";
 
 const Feature = ({feature}) => {
     return (
         <div>
-            <p>{feature}</p>
+            <p className="flex text-center"><FaCheckCircle className="text-green-500 mr-2"></FaCheckCircle> {feature}</p>
         </div>
     );
 };
