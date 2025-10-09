@@ -19,6 +19,7 @@ const mathMarksData = [
     return (
         <div>
             <LChart width={500} height={400} data={mathMarksData}></LChart>
+            <Line></Line>
         </div>
     );
 };
