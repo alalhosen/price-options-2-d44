@@ -15,7 +15,7 @@ const Phones = () => {
         const phoneWithFakeData = phoneData.map((phone) => {
             const obj={
                 name:phone.phone_name,
-                price:parseInt(phone.slug.splitJ('_')[1])
+                price:parseInt(phone.slug.split('_')[3])
             }
             return obj;
         })
