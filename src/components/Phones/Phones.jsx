@@ -8,18 +8,26 @@ const Phones = () => {
     //   .then((res) => res.json())
     //   .then((data) => setPhones(data.data));
 
-    axios.get('https://openapi.programming-hero.com/api/phones?search=iphone')
-    .then(data=>{
-        const phoneData=data.data.data;
-        const  phoneWithFakeData=phoneData.map(phone=>{
-            
+    axios
+      .get("https://openapi.programming-hero.com/api/phones?search=iphone")
+      .then((data) => {
+        const phoneData = data.data.data;
+        const phoneWithFakeData = phoneData.map((phone) => {
+            const obj={
+                name:phone.phone_name,
+                price:parseInt(phone.slug.splitJ('_')[1])
+            }
+            return obj;
         })
-    })
+        console.log(phoneWithFakeData);
+        setPhones(phoneWithFakeData)
+      });
   }, []);
 
-  return <div>
-    <h2 className="text-5xl">Phones: {phones.length}</h2>
-  </div>;
+  return (
+    <div>
+      <h2 className="text-5xl">Phones: {phones.length}</h2>
+    </div>
+  );
 };
-
 export default Phones;
