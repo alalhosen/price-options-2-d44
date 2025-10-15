@@ -12,7 +12,7 @@ function App() {
     <NavBar></NavBar>
       {/* <DaisyNav></DaisyNav> */}
       <h1 className="text-2xl font-bold bg-orange-300">Vite + React</h1>
-      <PriceOptions></PriceOptions>
+      {/* <PriceOptions></PriceOptions> */}
       <LineChart></LineChart>
       <Phones></Phones>
     </>
