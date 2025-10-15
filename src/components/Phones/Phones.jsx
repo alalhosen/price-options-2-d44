@@ -37,15 +37,17 @@ const Phones = () => {
 
   return (
     <div>
-      {loading && <Audio
-        height="80"
-        width="80"
-        radius="9"
-        color="green"
-        ariaLabel="three-dots-loading"
-        wrapperStyle
-        wrapperClass
-      />}
+      {loading && (
+        <Audio
+          height="80"
+          width="80"
+          radius="9"
+          color="green"
+          ariaLabel="three-dots-loading"
+          wrapperStyle
+          wrapperClass
+        />
+      )}
 
       <h2 className="text-5xl">Phones: {phones.length}</h2>
       <BarChart width={1200} height={200} data={phones}>
